@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@200;300;400&display=swap");
+
+.primary {
+  color: orange;
+  font-weight: lighter;
+}
+
+.font-xl {
+  /* font-size: 77px; */
+}
+:root {
+  font-size: 18px;
+  /* font-family: 'Quicksand', sans-serif;
+    --font-primary: 'Quicksand', sans-serif; */
+  /* MillerText,input mono,serif */
+  --font-primary: "Saira", sans-serif;
+  /* font-family: 'PT Mono', sans-serif; */
+  /* --font-primary: 'PT Mono', sans-serif; */
+  --font-secondary: "Quicksand", sans-serif;
+  --font-mono: "Ubuntu Mono", monospace;
+  --header1-font-family: "Libre Baskerville", serif;
+  --body-font-family: "Libre Baskerville", serif;
+  --text-primary: #000000;
+  --text-secondary: #000000;
+  --bg-primary: #ffffff;
+  --bg-secondary: #333333;
+  --transition-speed: 500ms ease-in-out;
+  --text-hover: rgba(0, 0, 0, 0.823);
+  --text-blur: gray;
+  --nav-color: grey;
+  --button-size: calc(var(--nav-size) * 0.5);
+  --bg: #242526;
+  --bg-accent: #484a4d;
+  --text-color: #dadce1;
+  --nav-size: 70px;
+  --border: 1px solid #474a4d;
+  --border-radius: 8px;
+  --speed: 0.2s;
+}
+
+p {
+  font-family: var(--font-primary);
+  color: #323232;
+}
+
+.main-container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  /* grid-template-columns: minmax(min-content, 768px); */
+  padding: 40px 128px;
+}
+/* .main-container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000000;
+  /* grid-template-columns: minmax(min-content, 768px); 
+  padding: 40px 128px;
+} */
+
+.navbar {
+  font-family: var(--font-primary);
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-around;
+  transition: 0.1s ease-out;
+}
+
+.navbar-links {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  display: flex;
+  color: #828282;
+  margin-top: auto;
+  margin-bottom: 0px;
+  margin-bottom: 5px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.h1-logo {
+  color: #323232;
+}
+
+h1 {
+  font-family: var(--font-primary);
+  margin-top: auto;
+  margin-bottom: 0px;
+  color: #595959;
+}
+h2 {
+  font-family: var(--font-primary);
+  margin-top: auto;
+  margin-bottom: 0px;
+  color: #595959;
+}
+
+a {
+  margin-right: 30px;
+  margin-bottom: 0px;
+  margin-top: auto;
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.1s ease-out;
+  padding-bottom: 2px;
+  overflow: hidden;
+}
+
+.inline-link {
+  color: orchid;
+  margin: 0px !important;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+.footnotes {
+  font-size: 14px;
+  color: #888;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .footnotes-icons {
+  font-size: 40px;
+  color: #888;
+} */
+.brainbase {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+.braintop {
+  position: absolute;
+  z-index: 1;
+}
+.braintop.top img {
+  animation: shake 5s;
+  z-index: 1;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+.braintop.middle img {
+  animation: shaker 5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+.braintop.bottom img {
+  animation: shakest 5s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.embedbase {
+  width: 100%;
+  position: relative;
+  float: left;
+}
+.embed {
+  width: 300px;
+  height: auto;
+  z-index: 1;
+}
+.embed.top img {
+  position: absolute;
+  top: 0px;
+  /* left: ; */
+  animation: beat 3s;
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+.card1,
+.card2,
+.card3,
+.card4 {
+  position: absolute;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+.card1 {
+  /* min-width: 60ch;
+  min-height: 60ch;
+  width: 45vw;
+  height: 45vw;
+  max-width: 100ch;
+  max-height: 100ch; */
+  background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg);
+}
+.card2 {
+  /* width: 25ch;
+  height: 25ch; */
+  background-image: url(https://image.flaticon.com/icons/svg/789/789395.svg);
+}
+.card3 {
+  opacity: 0.9;
+  /* width: 25ch;
+  height: 25ch; */
+  background-image: url(https://image.flaticon.com/icons/svg/414/414927.svg);
+}
+.card4 {
+  /* width: 25ch;
+  height: 25ch; */
+  background-image: url(https://image.flaticon.com/icons/svg/789/789392.svg);
+}
+.container {
+  /* width: 100%;
+  height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 600px;
+}
+@keyframes shake {
+  50% {
+    transform: translate(-8px, 8px);
+  }
+}
+@keyframes shaker {
+  50% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes shakest {
+  50% {
+    transform: translate(8px, -8px);
+  }
+}
+
+@keyframes beat {
+  50% {
+    transform: scale(1.1);
+  }
+}
