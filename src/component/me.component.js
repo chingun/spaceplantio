@@ -27,7 +27,7 @@ class Me extends Component {
                     Space Plant aims to accelerate terraforming of terrestrial planets through botany innovations. 
                 </p>
                 <p style={{"margin-left": "auto", "margin-right": "auto"}}> 
-                    If you are interested in supporting us you can on 
+                    If you are interested in supporting us, check out our
                     <a href="https://www.kickstarter.com/">  <img src={kick} width="130"/></a>
                 {/* <a href="kickstarter.com" src={kick} style={{"width": "200px"}}/> */}
                 </p>
