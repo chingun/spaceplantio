@@ -100,7 +100,7 @@ class Me extends Component {
         <div className="main-container" style={this.state.location === "sensor" ? {backgroundColor: "black"}: {backgroundColor: "white"}}>
             <div className="navbar">
                 <p className="navbar-image">
-                    <img src={logo} width="100px"/>
+                    <img src={logo} width="50px"/>
                 </p>
                 <h1>  
                     <a className="h1-logo" style={this.state.location === "sensor" ? {color: "white"}:{}} onClick={() => {this.setState({location: 'about'})}}> space plant </a>
