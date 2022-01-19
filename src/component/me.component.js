@@ -7,6 +7,7 @@ import heart from './circuit/retroheart.png';
 import circuit from './circuit/retroboardclean.png';
 import kick from './kickstarter/kicklogo.png';
 import beacon from './beacon/beacon.png';
+import logo from './logo/AppLogo256.png';
 import { AiFillGithub, AiFillInstagram, AiFillMail } from "react-icons/ai";
 
 
@@ -98,6 +99,9 @@ class Me extends Component {
         return(
         <div className="main-container" style={this.state.location === "sensor" ? {backgroundColor: "black"}: {backgroundColor: "white"}}>
             <div className="navbar">
+                <p className="navbar-image">
+                    <img src={logo} width="100px"/>
+                </p>
                 <h1>  
                     <a className="h1-logo" style={this.state.location === "sensor" ? {color: "white"}:{}} onClick={() => {this.setState({location: 'about'})}}> space plant </a>
                 </h1>

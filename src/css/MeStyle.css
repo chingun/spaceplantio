@@ -71,10 +71,17 @@ p {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
   justify-content: space-around;
   transition: 0.1s ease-out;
 }
-
+.navbar-image {
+  margin-left: 47px;
+  margin-right: 40px;
+  margin-bottom: -5px;
+  margin-top: -10px;
+}
 .navbar-links {
   font-family: var(--font-primary);
   font-size: 18px;
