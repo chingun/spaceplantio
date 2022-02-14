@@ -90,21 +90,24 @@ class Me extends Component {
         if (this.state.location !== "sensor"){
             return(<></>) 
         }
-        if(this.state.width > 800){
+        if (this.state.width > 1000){
             return( 
                 <p style={{"margin-left": "auto", "margin-right": "auto"}}> 
-                    <img src={beacon} width={window.innerWidth * 0.8}/>
+                    <img src={beacon} width={this.state.width * 0.8}/>
                 </p> 
             );
-        }
-        else {
+        } else if (this.state.width > 800){
+            return( 
+                <p style={{"margin-left": "auto", "margin-right": "auto"}}> 
+                    <img src={beacon} width={this.state.width * 0.95}/>
+                </p> 
+            );
+        } else {
             return(  
                 <img src={beacon_vert} width={this.state.width}/> 
             );
         }
-
     }
-
 
     bottom_links(){
         return(
