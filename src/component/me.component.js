@@ -90,6 +90,13 @@ class Me extends Component {
         if (this.state.location !== "sensor"){
             return(<></>) 
         }
+        if (this.state.width > 2000){
+            return( 
+                <p style={{"margin-left": "auto", "margin-right": "auto"}}> 
+                    <img src={beacon} width={1600}/>
+                </p> 
+            );
+        } 
         if (this.state.width > 1000){
             return( 
                 <p style={{"margin-left": "auto", "margin-right": "auto"}}> 
