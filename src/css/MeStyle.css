@@ -50,12 +50,18 @@ p {
 }
 
 .main-container {
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-right: 5%;
+  padding-bottom: 100%;
+  background-color: black;
+  color: black;
+  border: green;
+  margin: 0 auto;
   display: grid;
-  margin-left: auto;
-  margin-right: auto;
-  /* grid-template-columns: minmax(min-content, 768px); */
-  padding: 40px 128px;
+  justify-content: center;
 }
+
 /* .main-container {
   display: grid;
   margin-left: auto;
@@ -69,40 +75,45 @@ p {
   font-family: var(--font-primary);
   display: flex;
   flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: auto;
-  padding-right: auto;
-  justify-content: space-around;
   transition: 0.1s ease-out;
 }
-.navbar-image {
-  margin-left: 70px;
-  margin-right: 40px;
-  margin-bottom: -5px;
-  margin-top: -10px;
+.navbar-image-container {
+  /* border: 2px solid brown; */
+  display: flex;
+  justify-content: space-around;
 }
+.navbar-image {
+  width: 40px;
+  /* border: 2px solid #00a4bd; */
+}
+
 .navbar-links {
+  width: 200px;
+  margin: auto;
   font-family: var(--font-primary);
   font-size: 18px;
-  display: flex;
   color: #828282;
-  margin-top: auto;
-  margin-bottom: 0px;
-  margin-bottom: 5px;
+  display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
+}
+
+.navbar-links a {
+  margin: auto;
 }
 
 .h1-logo {
   color: #323232;
+  margin: auto;
 }
 
 h1 {
   font-family: var(--font-primary);
-  margin-top: auto;
-  margin-bottom: 0px;
   color: #595959;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: auto;
 }
 h2 {
   font-family: var(--font-primary);
@@ -138,7 +149,6 @@ a:hover {
 .footnotes {
   font-size: 14px;
   color: #888;
-  width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -178,7 +188,6 @@ a:hover {
   float: left;
 }
 .embed {
-  width: 300px;
   height: auto;
   z-index: 1;
 }
@@ -235,12 +244,17 @@ a:hover {
   justify-content: center;
 }
 
-.body {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
+.main_body {
   width: 600px;
+  padding: auto;
 }
+@media (max-width: 600px) {
+  .main_body {
+    width: 100%;
+    padding: auto;
+  }
+}
+
 @keyframes shake {
   50% {
     transform: translate(-8px, 8px);
@@ -261,4 +275,8 @@ a:hover {
   50% {
     transform: scale(1.1);
   }
+}
+
+.beacon_art {
+  width: 800px;
 }
