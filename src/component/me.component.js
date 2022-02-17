@@ -92,26 +92,28 @@ class Me extends Component {
         }
         if (this.state.width > 2000){
             return( 
-                <p style={{"margin-left": "auto", "margin-right": "auto"}}> 
+                <p style={{"margin-left": "auto", "margin": "auto"}}> 
                     <img src={beacon} width={1600}/>
                 </p> 
             );
         } 
         if (this.state.width > 1000){
             return( 
-                <p style={{"margin-left": "auto", "margin-right": "auto"}}> 
+                <p style={{"margin-left": "auto", "margin": "auto"}}> 
                     <img src={beacon} width={this.state.width * 0.8}/>
                 </p> 
             );
         } else if (this.state.width > 800){
             return( 
-                <p style={{"margin-left": "auto", "margin-right": "auto"}}> 
+                <p style={{"margin-left": "auto", "margin": "auto"}}> 
                     <img src={beacon} width={this.state.width * 0.95}/>
                 </p> 
             );
         } else {
             return(  
-                <img src={beacon_vert} width={this.state.width}/> 
+                <p style={{"margin-left": "auto", "margin": "auto"}}> 
+                    <img src={beacon_vert} width={this.state.width * 0.95}/> 
+                </p> 
             );
         }
     }
